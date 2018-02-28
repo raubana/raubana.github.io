@@ -9,7 +9,8 @@ html{
 body{
     padding: 0px;
     margin: 0px;
-	overflow: auto;
+	display:block;
+	overflow:auto;
 }
 
 dt{
@@ -22,8 +23,6 @@ dt{
 	max-width: 720px;
 	margin: auto;
 	padding: 10px;
-	
-	display: block;
 	
 	background-color: white;
 }
@@ -46,8 +45,7 @@ dt{
 }
 
 .project_summary{
-	float: right;
-	width: 25%;
+	width: 100%;
 	padding: 10px;
 }
 
