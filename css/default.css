@@ -27,6 +27,16 @@ dt{
 	background-color: white;
 }
 
+pre.code{
+	font-size: 12px;
+	font-family: "Lucida Console", Monaco, monospace;
+	-moz-tab-size: 4;
+	tab-size: 4;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	margin-left: 16px;
+}
+
 .project_main_video{
 	position: relative;
 	padding-bottom: 56.25%; /* 16:9 */
