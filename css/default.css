@@ -1,5 +1,9 @@
 // * { border: 1px solid black; }
 
+*{
+	font-family: "Tahoma";
+}
+
 html{
 	height: 100%;
     padding: 0px;
