@@ -1,10 +1,9 @@
 // * { border: 1px solid black; }
 
-*{
-	font-family: "Tahoma";
-}
 
 html{
+	font-family: "Tahoma";
+	color: rgb(64,64,64);
 	height: 100%;
     padding: 0px;
     margin: 0px;
@@ -36,8 +35,6 @@ dt{
 	
 	color: rgb(192,192,192);
 	background-color: rgb(64,64,64);
-	text-shadow: 0 0 3px black;
-	box-shadow: 0 0 3px black;
 }
 
 #content{
@@ -46,15 +43,31 @@ dt{
 	margin: auto;
 	padding: 10px;
 	
-	background-color: rgb(240,240,240);
-	box-shadow: 0 0 3px black;
+	background-color: rgb(224,224,224);
+}
+
+a.project_title_link{
+	font-size: 16px;
+	font-weight: bold;
+	vertical-align: top;
 }
 
 h1{
+	margin: 0;
 	padding: 0.25em;
-	color: black;
 	background-color: rgb(192,192,192);
-	box-shadow: 0 0 3px black;
+}
+
+h2{
+	margin: 0;
+	padding: 0.25em;
+	background-color: rgb(192,192,192);
+}
+
+h3{
+	margin: 0;
+	padding: 0.25em;
+	background-color: rgb(224,224,224);
 }
 
 pre.code{
@@ -67,6 +80,19 @@ pre.code{
 	margin-left: 16px;
 }
 
+img.cat_icon{
+	height: 1em;
+	opacity: 0.75;
+}
+
+div.subsection{
+	margin-top: 0;
+	margin-left: 0.5em;
+	margin-right: 0.5em;
+	padding: 0.5em;
+	background-color: rgb(240,240,240);
+}
+
 .project_main_video{
 	position: relative;
 	padding-bottom: 56.25%; /* 16:9 */
@@ -74,6 +100,10 @@ pre.code{
 	margin: 0px;
 	height: 0;
 	max-height: 100px;
+}
+
+.project_main_video{
+	margin: 0.5em;
 }
 
 .project_main_video iframe{
@@ -92,6 +122,11 @@ pre.code{
 .project_details{
 
 }
+
+.project_images{
+	margin: 0.5em;
+}
+
 
 .project_images img{
 	width: 100%;

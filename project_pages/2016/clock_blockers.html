@@ -16,106 +16,119 @@
 	<body>
 		<div id="website-title">raubana.github.io</div>
 		<div id="content">
-			<h2>This page is incomplete. Please come back later.</h2>
-		
 			<h1>Clock Blockers</h1>
+			<h2>This page is incomplete. Please come back later.</h2>
 			
-			<div class="project_main_video">
-				<iframe width="560" height="315"
-				src="https://www.youtube.com/embed/IbbH-kG55l8" frameborder="0"
-				allow="encrypted-media" allowfullscreen>
-				</iframe>
-			</div>
-			
-			<div>
-				<div class="project_summary">
-					<dl>
-						<dt>Project Type</dt>
-						<dd>Game Mod</dd>
-						<dt>Created</dt>
-						<dd>2016-1-13</dd>
-						<dt>Engine</dt>
-						<dd>Source (Garry's Mod)</dd>
-						<dt>Language</dt>
-						<dd>Lua</dd>
-						<dt>Status</dt>
-						<dd>Experimental, Work in Progress</dd>
-						<dt>Source Code</dt>
-						<dd>Closed (for now)</dd>
+			<div class="subsection">
+				<div class="project_main_video">
+					<iframe width="560" height="315"
+					src="https://www.youtube.com/embed/IbbH-kG55l8" frameborder="0"
+					allow="encrypted-media" allowfullscreen>
+					</iframe>
 				</div>
 				
-				<div class="project_details">
-					<p>
-						Ignoring the obvious wordplay, Clock Blockers is a
-						two-player time-travel first-person shooter inspired by
-						the <a 
-						href="https://youtu.be/CBawCe6du3w"
-						target="_blank">Corridor Digital video</a>
-						of the same name. The game has the two players compete
-						to obtain a malfunctioning time machine. Players will
-						have to deal with time anomalies that make the same
-						round repeat over and over, allowing them to play with
-						and cooperate with their past selves. The first player
-						(or is it team) to obtain the time machine 7 times wins
-						the match.
-					</p>
-					<p>For me, this was a challenging gamemode to make for
-						several reasons:
-					</p>
-					<div style="padding-left: 1em">
+				<div>
+					<div class="project_summary">
+						<dl>
+							<dt>Project Type</dt>
+							<dd>
+								<img class="cat_icon" src="../../images/cat_icons/exp.svg" title="Experiment">
+								Experiment
+							</dd>
+							<dd>
+								Game Mod
+							</dd>
+							<dt>Created</dt>
+							<dd>2016-1-13</dd>
+							<dt>Engine</dt>
+							<dd>
+								<img class="cat_icon" src="../../images/cat_icons/gmod.svg" title="Garry's Mod">
+								Source (Garry's Mod)
+							</dd>
+							<dt>Language</dt>
+							<dd>
+								<img class="cat_icon" src="../../images/cat_icons/lua.svg" title="Lua">
+								Lua
+							</dd>
+							<dt>Status</dt>
+							<dd>Work in Progress</dd>
+							<dt>Source Code</dt>
+							<dd>Closed (for now)</dd>
+					</div>
+					
+					<div class="project_details">
 						<p>
-							The first reason was figuring out how to
-							both record the actions of a player and then replay
-							them through a player bot. While difficult, it
-							proved to be possible (although not without some
-							small issues).
+							Ignoring the obvious wordplay, Clock Blockers is a
+							two-player time-travel first-person shooter inspired by
+							the <a 
+							href="https://youtu.be/CBawCe6du3w"
+							target="_blank">Corridor Digital video</a>
+							of the same name. The game has the two players compete
+							to obtain a malfunctioning time machine. Players will
+							have to deal with time anomalies that make the same
+							round repeat over and over, allowing them to play with
+							and cooperate with their past selves. The first player
+							(or is it team) to obtain the time machine 7 times wins
+							the match.
 						</p>
-						<p>
-							The second reason was figuring out when a bot would
-							be considered unlinked (whenever something in their
-							time-line changes enough that their actions are no
-							longer valid). The butterfly effect is very evident
-							in this gamemode, as tiny changes are often enough
-							to change the outcome of the entire round - like a
-							domino effect. Making the bots too sensitive to
-							changes made them  become unlinked too quickly,
-							while not making them sensitive enough made them act
-							strangely, like running at walls. Finding a balance
-							for each case was tricky, but eventually I devised a
-							system that would evaluate bots for possibly being
-							unlinked and would do so in a way that was
-							considered acceptable to most players.
+						<p>For me, this was a challenging gamemode to make for
+							several reasons:
 						</p>
+						<div style="padding-left: 1em">
+							<p>
+								The first reason was figuring out how to
+								both record the actions of a player and then replay
+								them through a player bot. While difficult, it
+								proved to be possible (although not without some
+								small issues).
+							</p>
+							<p>
+								The second reason was figuring out when a bot would
+								be considered unlinked (whenever something in their
+								time-line changes enough that their actions are no
+								longer valid). The butterfly effect is very evident
+								in this gamemode, as tiny changes are often enough
+								to change the outcome of the entire round - like a
+								domino effect. Making the bots too sensitive to
+								changes made them  become unlinked too quickly,
+								while not making them sensitive enough made them act
+								strangely, like running at walls. Finding a balance
+								for each case was tricky, but eventually I devised a
+								system that would evaluate bots for possibly being
+								unlinked and would do so in a way that was
+								considered acceptable to most players.
+							</p>
+							<p>
+								The third reason was that I had to create an AI
+								system from scratch for the player bots, as they
+								would become independent from their old time-line
+								once unlinked. This meant wrapping the existing
+								nav-mesh system and designing my own path-finding
+								system. Also, player bots have to be controlled much
+								like an actual player, meaning I had to design their
+								code to work almost like I was managing a virtual
+								keyboard and mouse, all while making them able to
+								perform tasks, traverse terrain, and attempt to make
+								accurate shots.
+							</p>
+						</div>
 						<p>
-							The third reason was that I had to create an AI
-							system from scratch for the player bots, as they
-							would become independent from their old time-line
-							once unlinked. This meant wrapping the existing
-							nav-mesh system and designing my own path-finding
-							system. Also, player bots have to be controlled much
-							like an actual player, meaning I had to design their
-							code to work almost like I was managing a virtual
-							keyboard and mouse, all while making them able to
-							perform tasks, traverse terrain, and attempt to make
-							accurate shots.
+							I get asked about this gamemode pretty often. Many
+							people want to play it, and while I want to release my
+							code, it's still an experiment, and the source code for
+							the project is quite messy. I simply don't feel
+							comfortable sharing it at this time. Sorry :/
 						</p>
 					</div>
-					<p>
-						I get asked about this gamemode pretty often. Many
-						people want to play it, and while I want to release my
-						code, it's still an experiment, and the source code for
-						the project is quite messy. I simply don't feel
-						comfortable sharing it at this time. Sorry :/
-					</p>
 				</div>
-			</div>
-			
-			<div class="project_images">
-				<a href="" target="_blank">
-					<img src="">
-				</a>
-				<div class="img_details">
-					DETAILS
+				
+				<div class="project_images">
+					<a href="" target="_blank">
+						<img src="">
+					</a>
+					<div class="img_details">
+						DETAILS
+					</div>
 				</div>
 			</div>
 			

@@ -1,7 +1,3 @@
-h2 {
-	margin-top: 2em;
-	margin-bottom: 0.5em;
-}
 
 .faq_q {
 	font-weight: bold;
@@ -12,5 +8,5 @@ h2 {
 .faq_a{
 	padding-left: 1em;
 	margin-top: 0.5em;
-	margin-bottom: 1.5em;
+	margin-bottom: 2em;
 }
