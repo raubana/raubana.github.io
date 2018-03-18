@@ -46,12 +46,6 @@ dt{
 	background-color: rgb(224,224,224);
 }
 
-a.project_title_link{
-	font-size: 16px;
-	font-weight: bold;
-	vertical-align: top;
-}
-
 h1{
 	margin: 0;
 	padding: 0.25em;
@@ -85,6 +79,10 @@ img.cat_icon{
 	opacity: 0.75;
 }
 
+img.large_img{
+	width: 100%;
+}
+
 div.subsection{
 	margin-top: 0;
 	margin-left: 0.5em;
@@ -102,34 +100,12 @@ div.subsection{
 	max-height: 100px;
 }
 
-.project_main_video{
-	margin: 0.5em;
-}
-
 .project_main_video iframe{
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
-}
-
-.project_summary{
-	width: 100%;
-	padding: 10px;
-}
-
-.project_details{
-
-}
-
-.project_images{
-	margin: 0.5em;
-}
-
-
-.project_images img{
-	width: 100%;
 }
 
 .img_details{
