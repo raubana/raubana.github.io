@@ -54,13 +54,6 @@ dd{
 	background-color: rgb(224,224,224);
 }
 
-@media only screen and (max-width: 600px) {
-	body{
-		font-size: 0.75em;
-	}
-}
-
-
 h1{
 	margin: 0;
 	padding: 0.25em;
@@ -126,8 +119,18 @@ div.subsection{
 .img_details{
 	width: 100%;
 	margin: auto;
-	margin-bottom: 1em;
+	margin-bottom: 3em;
 	padding: 0px;
 	font-style: italic;
 	text-align: center;
+}
+
+
+@media only screen and (max-width: 600px) {
+	body{
+		font-size: 0.75em;
+	}
+	.img_details{
+		margin-bottom: 1em;
+	}
 }
