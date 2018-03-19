@@ -122,9 +122,9 @@ div.subsection{
 
 .img_details{
 	width: 100%;
-	padding-left: 25px;
-	padding-right: 25px;
-	padding-bottom: 50px;
+	margin: auto;
+	margin-bottom: 1em;
+	padding: 0px;
 	font-style: italic;
 	text-align: center;
 }
