@@ -37,6 +37,7 @@ dt{
 	background-color: rgb(64,64,64);
 }
 
+
 #content{
 	min-height: 100%;
 	max-width: 720px;
@@ -45,6 +46,17 @@ dt{
 	
 	background-color: rgb(224,224,224);
 }
+
+@media only screen and (max-width: 600px) {
+    #website-title{
+		font-size: 2em;
+        max-width: 100%;
+    }
+	#content{
+        max-width: 100%;
+    }
+}
+
 
 h1{
 	margin: 0;
