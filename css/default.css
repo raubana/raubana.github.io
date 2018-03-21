@@ -83,7 +83,7 @@ pre.code{
 	tab-size: 4;
 	margin-top: 0.5em;
 	margin-bottom: 0.5em;
-	margin-left: 1em;
+	margin-left: 0.5em;
 }
 
 img.cat_icon{
@@ -97,9 +97,9 @@ img.large_img{
 
 div.subsection{
 	margin-top: 0;
-	margin-left: 0.5em;
-	margin-right: 0.5em;
-	padding: 0.5em;
+	margin-left: 1em;
+	margin-right: 1em;
+	padding: 1em;
 	background-color: rgb(240,240,240);
 }
 
