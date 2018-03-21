@@ -33,15 +33,19 @@ dd{
 #website-title{
 	max-width: 720px;
 	
+	padding: 1em;
+	margin: auto;
+	
+	background-color: rgb(64,64,64);
+}
+
+#website-title a{
 	font-family: arial;
 	font-weight: bold;
 	font-size: 3em;
-	
-	padding: 0.25em;
-	margin: auto;
+	text-decoration: none;
 	
 	color: rgb(192,192,192);
-	background-color: rgb(64,64,64);
 }
 
 
@@ -49,7 +53,7 @@ dd{
 	min-height: 100%;
 	max-width: 720px;
 	margin: auto;
-	padding: 10px;
+	padding: 1em;
 	
 	background-color: rgb(224,224,224);
 }
@@ -79,7 +83,7 @@ pre.code{
 	tab-size: 4;
 	margin-top: 0.5em;
 	margin-bottom: 0.5em;
-	margin-left: 16px;
+	margin-left: 1em;
 }
 
 img.cat_icon{
