@@ -7,7 +7,7 @@ html{
 	height: 100%;
     padding: 0px;
     margin: 0px;
-    background-color: rgb(128,128,128);
+    background-color: rgb(26,26,26);
 }
 
 body{
@@ -36,7 +36,7 @@ dd{
 	padding: 1em;
 	margin: auto;
 	
-	background-color: rgb(64,64,64);
+	background-color: rgb(0,0,0);
 }
 
 #website-title a{
@@ -55,7 +55,7 @@ dd{
 	margin: auto;
 	padding: 1em;
 	
-	background-color: rgb(224,224,224);
+	background-color: rgb(102,102,102);
 }
 
 h1{
