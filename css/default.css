@@ -2,12 +2,12 @@
 
 
 html{
-	font-family: "Tahoma";
-	color: rgb(64,64,64);
+	font-family: "Tamoha";
+	color: rgb(32,32,32);
 	height: 100%;
     padding: 0px;
     margin: 0px;
-    background-color: rgb(26,26,26);
+    background-color: rgb(48,48,48);
 }
 
 body{
@@ -78,7 +78,7 @@ h3{
 
 pre.code{
 	font-size: 0.75em;
-	font-family: "Lucida Console", Monaco, monospace;
+	font-family: "Courier", Monaco, monospace;
 	-moz-tab-size: 4;
 	tab-size: 4;
 	margin-top: 0.5em;
