@@ -1,139 +1,331 @@
-// * { border: 1px solid black; }
+/* 
+Default Style Sheet for raubana.github.io.
+Made by Dylan J. Raub (raubana)
+Last Updated: 2022-9-10
+*/
 
 
+
+/*    ==================    ROOT LEVEL ELEMENTS    ==================    */
+
+/* While the HTML element and the Body element are similar, they are not the
+same. See https://css-tricks.com/html-vs-body-in-css/ */
+
+
+/* HTML: Root element for the web page. Only contains a Body element. */
 html{
-	font-family: "Tahoma";
-	color: rgb(32,32,32);
 	height: 100%;
-    padding: 0px;
-    margin: 0px;
+	
+    padding: 0.0em;
+	
+    margin: 0.0em;
+}
+
+
+/* Body: The only child of the HTML element. Contains all remaining elements.*/
+body{
+	height: 100%;
+	
+    padding: 0.0em;
+	
+    margin: 0.0em;
+	
+	/* In my case, I'm using the Body tag to setup global styles. */
+	font-family: "Tahoma";
+	font-size: 18px;
+	
+	color: rgb(32,32,32);
+	
     background-color: rgb(48,48,48);
 }
 
-body{
-	font-size: 16px;
-	height: 100%;
-    padding: 0px;
-    margin: 0px;
-	display:block;
-	overflow:auto;
-}
 
-dt{
-	font-weight: bold;
-	margin-top: 1em;
-	margin-bottom: 0.25em;
-}
 
-dd{
-	margin-left: 1em;
-	-webkit-margin-start: 1em;
-}
 
-#website-title{
-	max-width: 830px;
-	
-	padding: 1em;
-	margin: auto;
-	
-	background-color: rgb(0,0,0);
-}
+/*    ==================    IN-LINE ELEMENTS    ==================    */
 
-#website-title a{
-	font-family: arial;
-	font-weight: bold;
-	font-size: 3em;
-	text-decoration: none;
-	
-	color: rgb(192,192,192);
+/* TODO */
+
+p {
+	margin: 0.0em;
 }
 
 
-#content{
-	min-height: 100%;
-	max-width: 800px;
-	margin: auto;
-	padding: 1em;
-	
-	background-color: rgb(102,102,102);
-}
+
+/*    ==================    HEADER ELEMENTS    ==================    */
+/* These are block text elements that appear larger and bolder than regular
+text, and are used to indicate and start and name of a section or subsection.
+Each begin with "h" followed by the level of that header. The higher the number,
+the smaller the font. This makes h1 elements good for titles, h2 elements good
+for subtitles or authors, and h3 good for subsections.*/
+
 
 h1{
-	margin-left: -0.25em;
-	margin-right: -0.25em;
-	margin-top: 0;
-	margin-bottom: 0;
-	padding: 0.25em;
+	padding: 0.5em;
+	
+	margin: 0.0em;
+	
 	background-color: rgb(192,192,192);
+	
+	border-style: solid;
+	border-width: 1px;
+	border-color: rgb(160,160,160);
 }
+
 
 h2{
-	margin: 0;
-	padding: 0.25em;
-	background-color: rgb(192,192,192);
-}
-
-h3{
-	margin: 0;
-	padding: 0.25em;
-	background-color: rgb(224,224,224);
-}
-
-pre.code{
-	font-size: 0.75em;
-	font-family: "Courier", Monaco, monospace;
-	-moz-tab-size: 4;
-	tab-size: 4;
-	margin-top: 0.5em;
-	margin-bottom: 0.5em;
-	margin-left: 0.5em;
-}
-
-img.cat_icon{
-	height: 1em;
-	opacity: 0.75;
-}
-
-img.large_img{
-	width: 100%;
-}
-
-div.subsection{
-	margin-top: 0;
+	padding: 0.5em;
+	
+	margin: 0.0em;
 	margin-left: 0.5em;
 	margin-right: 0.5em;
-	margin-bottom: 1em;
-	padding: 1em;
+	
+	background-color: rgb(192,192,192);
+	
+	border-style: solid;
+	border-width: 1px;
+	border-color: rgb(160,160,160);
+}
+
+
+h3{
+	padding: 0.5em;
+	
+	margin: 0.25em;
+	margin-left: -0.75em;
+	margin-right: -0.75em;
+	
+	background-color: rgb(224,224,224);
+	
+	border-style: solid;
+	border-width: 1px;
+	border-color: rgb(192,192,192);
+}
+
+
+
+
+/*    ==================    LIST ELEMENTS    ==================    */
+/* TODO */
+
+ul{
+	margin: 0.0em;
+}
+
+
+
+
+/*    ==================    DESCRIPTION ELEMENTS    ==================    */
+/* These are mostly used at the top of project pages, where various properties
+of the project are listed one after another. Description Term and Description
+Details elements are contained within a Description List element (<dl>).
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dt */
+
+
+/* Description List: TODO */
+dl{
+	margin: 0.0em;
+}
+
+
+/* Description Term: For providing a short name for an item to be described. */
+dt{
+	font-weight: bold;
+	/* margin-top: 1em; 
+	margin-bottom: 0.25em; */
+}
+
+
+/* Description Details: For providing a summary of details to the  element that
+immediately preceded it. */
+dd{
+	/* margin-left: 1em;
+	-webkit-margin-start: 1em; */
+}
+
+
+
+
+/*    ==================    IDENTIFIED ELEMENTS    ==================    */
+/* These are for elements that have an "id" attribute set. These are meant for
+unique elements, rather than many similar elements, as only one element can have
+a given ID for that web page. */
+
+
+/* ID="website-title": For the link at the top of every web page that contains
+the name of the website ("raubana.github.io"). Although  arbitrary, this title
+element is set to maximize width up to 800px + 0.5em. If the browser can't do a width
+matching or exceeding this amount, then this element will reduce its width to
+match it. */
+#website-title{
+	max-width: calc(800px + 1.0em);
+	
+	padding: 0.5em;
+	
+	margin: auto; /* This centers the element. */
+	
+	display: block; /* This ensures we get a line just for this element. */
+	
+	font-family: arial !important;
+	font-weight: bold !important;
+	font-size: 3em !important;
+	text-decoration: none !important;
+	
+	color: rgb(192,192,192) !important;
+	
+	background-color: rgb(0,0,0);
+	
+	box-shadow: 8px 8px 3px rgba(0, 0, 0, 0.2);
+}
+
+
+/* ID="content": This is for the div that holds the actual contents of the
+web page. This follows the website title element. */
+#content{
+	max-width: 800px;
+	
+	min-height: 100%; /* Set so the content element fills the whole available
+	vertical space, rather than just enough for its children. */
+	
+	margin: auto; /* This centers the element. */
+	
+	display: block; /* This ensures we get a line just for this element. */
+	
+	padding: 1.5em;
+	
+	background-color: rgb(102,102,102);
+	
+	box-shadow: 8px 8px 3px rgba(0, 0, 0, 0.2);
+}
+
+
+/* ID="website-footer": TODO */
+#website-footer{
+	width: 100%;
+	
+	height: auto;
+	
+	padding: 0.0em;
+	
+	margin: 0.0em;
+	margin-top: 2.0em;
+}
+
+
+
+
+/*    ==================    SUB-CLASS ELEMENTS    ==================    */
+/* These are elements of existing types with their class attribute set. These
+are general use, meaning there can be more than one on a web page. */
+
+
+/* ===== Pre-formatted Text Elements (<pre>) ===== 
+
+/* sub-class "code": While pre-formatted elements (<pre>) are typically used for
+mono-spaced fonts, this sub-class is specifically for displaying source code. */
+pre.code{
+	padding: 1.0em;
+	
+	overflow: scroll; /* Gotta be sure we can see all of the source code with
+	its white-space unaltered, even when clipped. */
+	
+	font-size: 1.0em;
+	font-family: "Courier", Monaco, monospace;
+	font-weight: bold;
+	
+	-moz-tab-size: 4; /* Firefox tab size */
+	tab-size: 4;
+	
+	background-color: rgb(224,224,224);
+	
+	border-style: solid;
+	border-width: 1px;
+	border-color: rgb(192,192,192);
+	
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+
+/* ===== Image Elements (<img>) ===== 
+
+/* sub-class "category icon" : A subclass of image elements specifically
+for category icons. These are shown in-line with project names and next to
+project details on project pages to indicate a category it falls into. */
+img.cat_icon{
+	height: 1.0em;
+	
+	opacity: 0.75; /* Not sure why this is here */
+}
+
+/* sub-class "large image" : A subclass of image elements specifically for
+images that should be shown as large as reasonably possible, taking up the
+entire horizontal space available for a line, while keeping the aspect ratio
+unchanged. These are usually for images shown on project pages. */
+img.large_img{
+	width: 100%;
+	
+	margin: 0.0em;
+}
+
+
+/* ===== Division Elements (<div>) ===== 
+/* Easily the most general element type, division elements are used simply to
+keep parts of a web page separated and organized. It can be thought of as a
+container for more content. */
+
+/* sub-class "subsection": For content following a header.*/
+div.subsection{
+	padding: 1.5em;
+	
+	/*
+	margin-top: 0.0em;
+	margin-left: 1.5em;
+	margin-right: 1.5em;
+	margin-bottom: 0.5em;
+	*/
+	margin: 0.0em;
+	margin-left: 2.0em;
+	margin-right: 2.0em;
+	
 	background-color: rgb(240,240,240);
 }
 
-.project_main_video{
-	position: relative;
-	padding-bottom: 56.25%; /* 16:9 */
-	padding-top: 25;
-	margin: 0px;
-	height: 0;
-	max-height: 100px;
-}
 
-.project_main_video iframe{
-	position: absolute;
-	top: 0;
-	left: 0;
+
+
+/*    ==================    CUSTOM CLASS ELEMENTS    ==================    */
+/* These are elements of an unspecified type with their class attribute set.
+These are general use, meaning there can be more than one on a web page. */
+
+
+/* Class "Large Video Embed": For the element that either is or contains an
+embedded video.*/
+.large_video_embed{
 	width: 100%;
-	height: 100%;
+	
+	margin: 0.0em;
 }
 
+
+/* Class "Image Details": ehh... this is for the text immediately following an
+image which gives some details about it.*/
 .img_details{
 	width: 100%;
-	margin: auto;
-	margin-bottom: 3em;
-	padding: 0px;
+	
+	padding: 0.0em;
+	
+	margin: 0.0em;
+	
 	font-style: italic;
+	
 	text-align: center;
 }
 
 
+
+
+/*    ==================    STYLE DYNAMICS    ==================    */
+/* This is for adjusting the style based on the dimensions of the window. */
 @media only screen and (max-width: 600px) {
 	body{
 		font-size: 0.75em;
