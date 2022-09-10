@@ -328,7 +328,7 @@ image which gives some details about it.*/
 /* This is for adjusting the style based on the dimensions of the window. */
 @media only screen and (max-width: 600px) {
 	body{
-		font-size: 0.75em;
+		font-size: 1.25em;
 	}
 	.img_details{
 		margin-bottom: 1em;
