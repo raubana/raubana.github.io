@@ -324,6 +324,18 @@ image which gives some details about it.*/
 
 
 
+/*    ==================    MISC?    ==================    */
+/* TODO */
+.twitter-tweet{
+	margin: auto; /* This centers the element. */
+	
+	display: block; /* This ensures we get a line just for this element. */
+}
+
+
+
+
+
 /*    ==================    STYLE DYNAMICS    ==================    */
 /* This is for adjusting the style based on the dimensions of the window. */
 @media only screen and (max-width: 600px) {
