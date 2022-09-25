@@ -1,7 +1,7 @@
 /* 
 Default Style Sheet for raubana.github.io.
 Made by Dylan J. Raub (raubana)
-Last Updated: 2022-9-10
+Last Updated: 2022-09-25
 */
 
 
@@ -170,6 +170,7 @@ match it. */
 	font-weight: bold !important;
 	font-size: 3em !important;
 	text-decoration: none !important;
+	text-align: center;
 	
 	color: rgb(192,192,192) !important;
 	
